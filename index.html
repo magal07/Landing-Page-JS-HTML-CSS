@@ -5,39 +5,246 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/menu.css">
-    <link rel="stylesheet" href="assets/css/classes.css">
-    <link rel="stylesheet" href="assets/css/elements.css">
     <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/elements.css">
+    <link rel="stylesheet" href="assets/css/classes.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
-
 </head>
 
 <body class="main-bg">
     <aside class="menu white-bg">
-        <section class="main-content menu-content">
+        <div class="main-content menu-content">
             <h1>
-                <a href="#">LOGO</a>
+                <a href="home">LOGO</a>
             </h1>
             <nav>
                 <ul>
-                    <li><a href="#">Intro</a></li>
-                    <li><a href="#">Top 3</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Work</a></li>
+                    <li><a href="#intro">Intro</a></li>
+                    <!-- <li><a href="#top3">Top 3</a></li> -->
+                    <li><a href="#grid-one">Grid-One</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#grid-two">Grid-Two</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
-        </section>
+        </div>
     </aside>
+    <div class="menu-spacing"></div>
+    <section id="home" class="intro main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>January brings us Firefox 85</h2>
+                <p>Lorem ipsum dolor, sit amet
+                    consectetur adipisicing elit.
+                    Totam, exercitationem. Tenetur
+                    vitae provident incidunt dicta
+                    ssumenda praesentium ex minima quam?
+                    Dolorem exercitationem dignissimos fuga
+                    provident neque, error beatae rem veniam!</p>
+            </div>
+            <div class="intro-img">
+                <img src="assets/img/javascript.svg" alt="Logo de HTML, CSS e JS.">
 
-    <section class="section"></section>
-    <section class="section"></section>
+            </div>
+        </div>
+    </section>
+    <section id="intro" class="white-bg section">
+        <div class="main-content top3-content">
+            <h2>Dolorem exercitationem dignissimos</h2>
+            <p>Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit.
+                Totam, exercitationem. Tenetur
+                vitae provident incidunt dicta
+                ssumenda praesentium ex minima quam?
+                Dolorem exercitationem dignissimos fuga
+                provident neque, error beatae rem veniam!</p>
+            <p>Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit.
+                Totam, exercitationem. Tenetur
+                vitae provident incidunt dicta
+                ssumenda praesentium ex minima quam?
+                Dolorem exercitationem dignissimos fuga
+                provident neque, error beatae rem veniam!</p>
+            <p>Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit.
+                Totam, exercitationem. Tenetur
+                vitae provident incidunt dicta
+                ssumenda praesentium ex minima quam?
+                Dolorem exercitationem dignissimos fuga
+                provident neque, error beatae rem veniam!</p>
+            <p>Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit.
+                Totam, exercitationem. Tenetur
+                vitae provident incidunt dicta
+                ssumenda praesentium ex minima quam?
+                Dolorem exercitationem dignissimos fuga
+                provident neque, error beatae rem veniam!</p>
+        </div>
+    </section>
+    <section id="grid-one" class="grid-one main-bg section">
+        <div class="main-content grid-one-content">
+            <h2 class="gid-min-heading">My Grid</h2>
+            <p class="grid-description">Uma breve descrição</p>
+            <div class="grid">
+                <article>
+                    <h3>Teste 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia unde, hic ab voluptate inventore
+                        sit rem molestias in illo maiores aliquid architecto qui blanditiis nesciunt quas magnam sint
+                        dolore molestiae!</p>
+                </article>
+                <article>
+                    <h3>Teste 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia unde, hic ab voluptate inventore
+                        sit rem molestias in illo maiores aliquid architecto qui blanditiis nesciunt quas magnam sint
+                        dolore molestiae!</p>
+                </article>
+                <article>
+                    <h3>Teste 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia unde, hic ab voluptate inventore
+                        sit rem molestias in illo maiores aliquid architecto qui blanditiis nesciunt quas magnam sint
+                        dolore molestiae!</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="grid-one white-bg section">
+        <div class="main-content grid-one-content">
+            <h2 class="gid-min-heading">Gallery</h2>
+            <p class="grid-description">Uma breve descrição</p>
+            <div class="grid">
+                <div class="gallery-img">
+                    <img src="https://picsum.photos/360/360?=r2" alt="random image from unsplash" />
+                </div>
+                <div class="gallery-img">
+                    <img src="https://picsum.photos/360/360?=r3" alt="random image from unsplash" />
+                </div>
+                <div class="gallery-img">
+                    <img src="https://picsum.photos/360/360?=r4" alt="random image from unsplash" />
+                </div>
+                <div class="gallery-img">
+                    <img src="https://picsum.photos/360/360?=r6" alt="random image from unsplash" />
+                </div>
+                <div class="gallery-img">
+                    <img src="https://picsum.photos/360/360?=r7" alt="random image from unsplash" />
+                </div>
+                <div class="gallery-img">
+                    <img src="https://picsum.photos/360/360?=r9" alt="random image from unsplash" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="grid-two" class="grid-one main-bg section">
+        <div class="main-content grid-one-content">
+            <h2 class="gid-min-heading">My Grid</h2>
+            <p class="grid-description">Uma breve descrição</p>
+            <div class="grid">
+                <article>
+                    <h3>Teste 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia unde, hic ab voluptate inventore
+                        sit rem molestias in illo maiores aliquid architecto qui blanditiis nesciunt quas magnam sint
+                        dolore molestiae!</p>
+                </article>
+                <article>
+                    <h3>Teste 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia unde, hic ab voluptate inventore
+                        sit rem molestias in illo maiores aliquid architecto qui blanditiis nesciunt quas magnam sint
+                        dolore molestiae!</p>
+                </article>
+                <article>
+                    <h3>Teste 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia unde, hic ab voluptate inventore
+                        sit rem molestias in illo maiores aliquid architecto qui blanditiis nesciunt quas magnam sint
+                        dolore molestiae!</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="white-bg section">
+        <div class="main-content top3-content">
+            <h2>Pricing</h2>
+            <p>Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit.
+                Totam, exercitationem. Tenetur
+                vitae provident incidunt dicta
+                ssumenda praesentium ex minima quam?
+                Dolorem exercitationem dignissimos fuga
+                provident neque, error beatae rem veniam!</p>
+            <p>Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit.
+                Totam, exercitationem. Tenetur
+                vitae provident incidunt dicta
+                ssumenda praesentium ex minima quam?
+                Dolorem exercitationem dignissimos fuga
+                provident neque, error beatae rem veniam!</p>
+                
+                <div class="responsive-table">
+            <table>
+                <caption>Pricing Table</caption>
+                <thead>
+                    <tr>
+                        <th>Title 1</th>
+                        <th>Title 2</th>
+                        <th>Title 3</th>
+                        <th>Title 4</th>
+                        <th>Title 5</th>
+                        <th>Title 6</th>
+                        <th>Title 7</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Content 1</td>
+                        <td>Content 2</td>
+                        <td>Content 3</td>
+                        <td>Content 4</td>
+                        <td>Content 5</td>
+                        <td>Content 6</td>
+                        <td>Content 7</td>
+                    </tr>
+                    <tr>
+                        <td>Content 1</td>
+                        <td>Content 2</td>
+                        <td>Content 3</td>
+                        <td>Content 4</td>
+                        <td>Content 5</td>
+                        <td>Content 6</td>
+                        <td>Content 7</td>
+                    </tr>
+                    <tr>
+                        <td>Content 1</td>
+                        <td>Content 2</td>
+                        <td>Content 3</td>
+                        <td>Content 4</td>
+                        <td>Content 5</td>
+                        <td>Content 6</td>
+                        <td>Content 7</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Testando</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    </section>
 
 </body>
 
