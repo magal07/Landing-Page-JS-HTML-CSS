@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Seja bem vindo</title>
     <link rel="stylesheet" href="assets/css/variables.css">
     <link rel="stylesheet" href="assets/css/elements.css">
     <link rel="stylesheet" href="assets/css/classes.css">
@@ -23,13 +23,13 @@
     <aside class="menu white-bg">
         <div class="main-content menu-content">
             <h1 onclick="getElementById('close-menu').checked = false">
-                <a href="home">LOGO</a>
+                <a href="#home">Home</a>
             </h1>
             <nav>
                 <ul onclick="getElementById('close-menu').checked = false">
-                    <li><a href="#intro">Intro</a></li>
-                    <!-- <li><a href="#top3">Top 3</a></li> -->
-                    <li><a href="#grid-one">Grid-One</a></li>
+                    <li><a href="#home">Sobre mim</a></li>
+                    <li><a href="#grid-one">Projetos</a></li>
+                    <li><a href="#grid-three">Projetos Casuais</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#grid-two">Grid-Two</a></li>
                     <li><a href="#pricing">Pricing</a></li>
@@ -42,81 +42,107 @@
     <section id="home" class="intro main-bg section">
         <div class="main-content intro-content">
             <div class="intro-text-content">
-                <h2>January brings us Firefox 85</h2>
-                <p>Lorem ipsum dolor, sit amet
-                    consectetur adipisicing elit.
-                    Totam, exercitationem. Tenetur
-                    vitae provident incidunt dicta
-                    ssumenda praesentium ex minima quam?
-                    Dolorem exercitationem dignissimos fuga
-                    provident neque, error beatae rem veniam!</p>
+                <h2>Prazer, Marcelo Magalhães</h2>
+                <p>Formado em Análise e Desenvolvimento de Sistemas, 
+                    Pós Graduado em MBA - Inteligência Artificial e Big Data,
+                    cursando Pós Graduação em Desenvolvimento Web Full Stack
+                    e estudante de Engenharia de Software 5º Semestre.</p>
             </div>
             <div class="intro-img">
                 <img src="assets/img/javascript.svg" alt="Logo de HTML, CSS e JS.">
-
             </div>
         </div>
     </section>
-    <section id="intro" class="white-bg section">
-        <div class="main-content top3-content">
-            <h2>News coverage and some surprises</h2>
-            <p>Lorem ipsum dolor, sit amet
-                consectetur adipisicing elit.
-                Totam, exercitationem. Tenetur
-                vitae provident incidunt dicta
-                ssumenda praesentium ex minima quam?
-                Dolorem exercitationem dignissimos fuga
-                provident neque, error beatae rem veniam!</p>
-            <p>Lorem ipsum dolor, sit amet
-                consectetur adipisicing elit.
-                Totam, exercitationem. Tenetur
-                vitae provident incidunt dicta
-                ssumenda praesentium ex minima quam?
-                Dolorem exercitationem dignissimos fuga
-                provident neque, error beatae rem veniam!</p>
-            <p>Lorem ipsum dolor, sit amet
-                consectetur adipisicing elit.
-                Totam, exercitationem. Tenetur
-                vitae provident incidunt dicta
-                ssumenda praesentium ex minima quam?
-                Dolorem exercitationem dignissimos fuga
-                provident neque, error beatae rem veniam!</p>
-            <p>Lorem ipsum dolor, sit amet
-                consectetur adipisicing elit.
-                Totam, exercitationem. Tenetur
-                vitae provident incidunt dicta
-                ssumenda praesentium ex minima quam?
-                Dolorem exercitationem dignissimos fuga
-                provident neque, error beatae rem veniam!</p>
-        </div>
-    </section>
-    <section id="grid-one" class="grid-one main-bg section">
+    <section id="grid-one" class="grid-one white-bg section">
         <div class="main-content grid-one-content">
-            <h2 class="gid-min-heading">My Grid</h2>
-            <p class="grid-description">Uma breve descrição</p>
+            <h2 class="gid-min-heading">Meus Projetos:</h2>
+            <p class="grid-description">Para visualizar o código fonte, clique no tema do projeto.</p>
             <div class="grid">
                 <article>
-                    <h3>Teste 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia unde, hic ab voluptate inventore
-                        sit rem molestias in illo maiores aliquid architecto qui blanditiis nesciunt quas magnam sint
-                        dolore molestiae!</p>
+                    <h3><a href="#home">Projeto:<br> Landing Page</a></h3>
+                    <p>
+                        Este projeto apresenta tecnicamente minhas habilidades e o que posso contribuir para sua equipe. Ele foi desenvolvido usando tecnologias essenciais da web:
+                        HTML5: Estrutura semântica e organizada da página, garantindo acessibilidade e SEO.
+                        CSS: Design responsivo e estilização refinada para diferentes dispositivos incluindo móveis, proporcionando uma experiência visual agradável.
+                        JavaScript (JS): Funcionalidades dinâmicas e interatividade, melhorando a usabilidade e a experiência do usuário.
+                        O projeto demonstra minha capacidade de criar interfaces modernas, eficientes e responsivas, alinhadas às melhores práticas de desenvolvimento web.
+                    </p>
                 </article>
                 <article>
-                    <h3>Teste 2</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia unde, hic ab voluptate inventore
-                        sit rem molestias in illo maiores aliquid architecto qui blanditiis nesciunt quas magnam sint
-                        dolore molestiae!</p>
+                    <h3><a href="https://github.com/magal07/Projeto-ASP-NET-CORE-WEB" target="_blank"><br>Sales Web MVC</a></h3>
+                    <p>Este projeto foi desenvolvido com o objetivo de simplificar a gestão de vendas para empresas, proporcionando uma interface intuitiva e funcionalidades poderosas. Aqui estão alguns dos destaques:
+                        ✅CRUD Completo: Permite criar, ler, atualizar e deletar registros de departamentos, vendedores e vendas de forma eficiente.
+                        <br>✅Pesquisas Avançadas: Ferramentas para realizar buscas simples e agrupadas de dados de vendas, facilitando a análise e a tomada de decisões.
+                        <br>✅Interface Amigável: Design moderno e responsivo, garantindo uma experiência de usuário excepcional em qualquer dispositivo (Android/IOS).
+                        Desenvolver o Sales Web MVC foi uma experiência incrível, que me permitiu aprimorar minhas habilidades em desenvolvimento web. 
+                        </p>
                 </article>
                 <article>
-                    <h3>Teste 3</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia unde, hic ab voluptate inventore
-                        sit rem molestias in illo maiores aliquid architecto qui blanditiis nesciunt quas magnam sint
-                        dolore molestiae!</p>
+                    <h3><a href="https://github.com/magal07/ProductionOrdersAPI" target="_blank"><br>Production Orders API</a></h3> 
+                    <p>Este projeto foi desenvolvido para otimizar a gestão de ordens de produção, oferecendo uma API robusta e 
+                        eficiente que facilita a integração e o controle de processos produtivos. Aqui estão alguns dos destaques: 
+                        <br>✅CRUD Completo: Permite criar, ler, atualizar e deletar registros de ordens de produção, produtos e clientes de forma eficiente. 
+                        <br>✅Integração Simples: Facilidade de integração com outros sistemas e plataformas, garantindo interoperabilidade e eficiência.
+                        <br>✅Segurança: Implementação de autenticação e autorização para proteger os dados e garantir acesso somente a usuários autorizados. 
+                        <br>✅Documentação Completa: Fornece documentação detalhada e exemplos de uso para facilitar a implementação e utilização da API.</p>
                 </article>
             </div>
         </div>
     </section>
+    <section id="grid-three" class="grid-one main-bg section">
+        <div class="main-content grid-one-content">
+            <h2 class="gid-min-heading">Projetos Casuais</h2>
+            <p class="grid-description">Para visualizar o código fonte, clique no tema do projeto.</p>
+            <div class="grid">
+                <article>
+                    <h3>Projeto:<a href="https://github.com/magal07/Projeto-Xadrez" target="_blank"><br>Xadrez</a></h3>
+                    <p>Este projeto implementa a lógica de um jogo de xadrez em C#, permitindo a movimentação das 
+                        peças, verificação de xeque e xeque-mate, en passant, promoção além de outras funcionalidades do jogo.
+                        Funcionalidades:
+                        <br>✅ Validação de movimentos das peças.
+                        <br>✅ Verificação de xeque e xeque-mate.
+                        <br>✅ Jogada especial "en passant".
+                        <br>✅ Jogada especial "roque pequeno" && "roque grande".
+                        <br>✅ Peão, pode virar dama.
+                        <br>✅ Simulação de jogadas.
+                        <br>✅ Representação de um tabuleiro de xadrez.
+                        <br>✅ Controle de turnos.
+                        <br>🛠️ Tecnologias Utilizadas:
+                        <br>Linguagem: C#
+                        <br>Framework: .NET (Framework/Core)
+                        <br>🚀 Como Executar
+                        🔹 1. Clonar o repositório
+                        Abra o terminal e execute:
+                    </p>
+                </article>
+                <article>
+                    <h3><a href="https://github.com/magal07/CourseCSharp" target="_blank">Projeto de Estudo: <br>Linguagem: C#</a></h3>
+                    <p>
+                        Este projeto é uma demonstração abrangente de todos os conteúdos aprendidos ao longo do curso de C#. Com aproximadamente 12 módulos distribuídos em mais de 6 meses de estudo, cobre uma vasta gama de tópicos nesta linguagem robusta. Cada módulo inclui diversos projetos internos e exercícios práticos, todos desenvolvidos e solucionados por mim, proporcionando uma sólida compreensão dos conceitos e técnicas de C#.
 
+Os conteúdos estudados incluem, mas não se limitam a:
+Programação Orientada a Objetos (POO): Conceitos fundamentais como classes, objetos, herança, polimorfismo e encapsulamento.
+Coleções e Genéricos: Uso de listas, dicionários e outros tipos de coleções, bem como a implementação de genéricos para maior flexibilidade e reutilização de código.
+LINQ: Linguagem Integrada de Consulta para manipulação e consulta eficiente de dados.
+Tratamento de Exceções: Técnicas para lidar com erros e exceções, garantindo a robustez do aplicativo.
+Desenvolvimento de Interfaces Gráficas: Utilização de Windows Forms e WPF para a criação de interfaces de usuário interativas.
+Acesso a Dados: Implementação de ADO.NET e Entity Framework para interagir com bancos de dados.
+Testes e Debugging: Métodos para testar e depurar aplicações, assegurando a qualidade do código.
+Arquitetura de Software: Padrões de design e melhores práticas para construção de aplicações escaláveis e de fácil manutenção.
+Esses módulos fornecem uma base sólida e prática para o desenvolvimento de software utilizando C#. 
+                    </p>
+                </article>
+                <article>
+                    <h3><a href="https://github.com/magal07/ProjetoPHP" target="_blank">Projeto de Estudo: <br>Linguagem: PHP</a></h3>
+                    <p>
+                        Este é um projeto de estudo, com conteúdos praticamente iguais aos de C# somente com a mudança das sintaxes,
+                        foi a primeira linguagem ao qual estudei, e foi a que me abriu caminho para conhecer o mundo da tecnologia.
+                    <br>Confira meus módulos de estudo <a href="https://github.com/magal07/ProjetoPHP" target="_blank">clicando aqui.</a>
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
     <section id="gallery" class="grid-one white-bg section">
         <div class="main-content grid-one-content">
             <h2 class="gid-min-heading">Gallery</h2>

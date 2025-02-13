@@ -187,7 +187,10 @@
     color: var(--primary-color);
     transform: rotate(-90deg);
     border: 0.1rem solid var(--primary-color);
-
+}
+a:visited {
+    color: inherit; /* Define a cor do link visitado */
+    text-decoration: none; /* Remove a sublinha do link visitado, se necessário */
 }
 
 @media (max-width: 800px) {
