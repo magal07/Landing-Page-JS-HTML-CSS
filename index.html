@@ -32,8 +32,8 @@
                     <li><a href="#grid-one">Projetos</a></li>
                     <li><a href="#grid-three">Projetos Casuais</a></li>
                     <li><a href="#slideshow">Slide Show</a></li>
-                    <li><a href="#grid-two">Grid-Two</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
+                    <!-- <li><a href="#grid-two">Grid-Two</a></li> -->
+                    <li><a href="#meus-estudos">Meus Estudos</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -109,6 +109,7 @@
             </div>
         </div>
     </section>
+
     <section id="grid-three" class="grid-one main-bg section">
         <div class="main-content grid-one-content">
             <h2 class="gid-min-heading">Projetos Casuais</h2>
@@ -179,37 +180,19 @@
             </div>
         </div>
     </section>
-    <!-- <section id="gallery" class="grid-one white-bg section">
-        <div class="main-content grid-one-content">
-            <h2 class="gid-min-heading">Gallery</h2>
-            <p class="grid-description">Uma breve descrição</p>
-            <div class="grid">
-                <div class="gallery-img">
-                    <img src="https://picsum.photos/360/360?=r2" alt="random image from unsplash" />
-                </div>
-                <div class="gallery-img">
-                    <img src="https://picsum.photos/360/360?=r3" alt="random image from unsplash" />
-                </div>
-                <div class="gallery-img">
-                    <img src="https://picsum.photos/360/360?=r4" alt="random image from unsplash" />
-                </div>
-                <div class="gallery-img">
-                    <img src="https://picsum.photos/360/360?=r6" alt="random image from unsplash" />
-                </div>
-                <div class="gallery-img">
-                    <img src="https://picsum.photos/360/360?=r7" alt="random image from unsplash" />
-                </div>
-                <div class="gallery-img">
-                    <img src="https://picsum.photos/360/360?=r9" alt="random image from unsplash" />
-                </div>
-            </div>
-        </div>
-    </section> -->
+    <section id="home" class="intro main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
 
-    <section id="slideshow" class="white-bg section">
-        <div class="slider main-content grid-one-content">
-        <div class="slider">
-        <div class="slides">
+<section id="slideshow" class="intro main-bg section">
+    <div class="main-content intro-content"> 
+        <div class="intro-text-content">
+            <h2>Slide Show</h2>
+            <p>Confira alguns de meus projetos no slideshow ao lado:</p>
+        </div>
+        <div class="slider-container"> <!-- Adicionando um contêiner específico -->
+            <div class="slider">
+                <div class="slides">
             <!--RadioButton-->
             <input type="radio" name="radio-btn" id="radio1">
             <input type="radio" name="radio-btn" id="radio2">
@@ -220,7 +203,9 @@
 
             <!--Slide images-->
             <div class="slide first">
-                <img src="assets/img/07_PHP.png" alt="Projeto Sales Web">
+                <a href="#grid-one">
+                <img src="assets/img/01_home_dark.png" alt="Projeto Sales Web">
+            </a>
             </div>
             <div class="slide">
                 <img src="assets/img/04_POapi.png" alt="ProductionOrdersAPI1">
@@ -249,16 +234,19 @@
         </div>
 
         <div class="manual-navigation"> 
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>
-            <label for="radio5" class="manual-btn"></label>
-            <label for="radio6" class="manual-btn"></label>
+            <label for="radio1" class="manual-btn" onclick="resetCounter(1)"></label>
+            <label for="radio2" class="manual-btn" onclick="resetCounter(2)"></label>
+            <label for="radio3" class="manual-btn" onclick="resetCounter(3)"></label>
+            <label for="radio4" class="manual-btn" onclick="resetCounter(4)"></label>
+            <label for="radio5" class="manual-btn" onclick="resetCounter(5)"></label>
+            <label for="radio6" class="manual-btn" onclick="resetCounter(6)"></label>
         </div>
     </div>
+            </div>
 </section>
     <script src="assets/js/script.js"></script>
+
+     <!--New Grid -Caso precise 
     <section id="grid-two" class="grid-one main-bg section">
         <div class="main-content grid-one-content">
             <h2 class="gid-min-heading">My Grid</h2>
@@ -285,77 +273,56 @@
             </div>
         </div>
     </section>
+-->
+    
 
-    <section id="pricing" class="white-bg section">
+
+<section id="meus-estudos" class="grid-one white-bg section">
         <div class="main-content top3-content">
-            <h2>Pricing</h2>
-            <p>Lorem ipsum dolor, sit amet
-                consectetur adipisicing elit.
-                Totam, exercitationem. Tenetur
-                vitae provident incidunt dicta
-                ssumenda praesentium ex minima quam?
-                Dolorem exercitationem dignissimos fuga
-                provident neque, error beatae rem veniam!</p>
-            <p>Lorem ipsum dolor, sit amet
-                consectetur adipisicing elit.
-                Totam, exercitationem. Tenetur
-                vitae provident incidunt dicta
-                ssumenda praesentium ex minima quam?
-                Dolorem exercitationem dignissimos fuga
-                provident neque, error beatae rem veniam!</p>
-
+            <h2>Sobre meus estudos</h2>
             <div class="responsive-table">
                 <table>
-                    <caption>Pricing Table</caption>
+                    <caption>Nivelamento de estudos.</caption>
                     <thead>
                         <tr>
-                            <th>Title 1</th>
-                            <th>Title 2</th>
-                            <th>Title 3</th>
-                            <th>Title 4</th>
-                            <th>Title 5</th>
-                            <th>Title 6</th>
-                            <th>Title 7</th>
+                            <th>Superior</th>
+                            <th>Cursos TI</th>
+                            <th>Complementares</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Content 1</td>
-                            <td>Content 2</td>
-                            <td>Content 3</td>
-                            <td>Content 4</td>
-                            <td>Content 5</td>
-                            <td>Content 6</td>
-                            <td>Content 7</td>
+                            <td>Análise e Desenvolvimento de Sistemas<br><b>(Formado)</b></td>
+                            <td><b>C#:</b> Programação Orientado a Objetos</td>
+                            <td><b>Pacote Office:</b> Excel, PowerPoint e Word</td>
                         </tr>
                         <tr>
-                            <td>Content 1</td>
-                            <td>Content 2</td>
-                            <td>Content 3</td>
-                            <td>Content 4</td>
-                            <td>Content 5</td>
-                            <td>Content 6</td>
-                            <td>Content 7</td>
+                            <td>Pós Graduação: Inteligência Artificial e Big Data<br><b>(Formado)</b></td>
+                            <td><b>JS | TS:</b> Básico ao Avançado</td>
+                            <td><b>Redes Lógicas:</b> Implantação de Projeto (SENAI)</td>
                         </tr>
                         <tr>
-                            <td>Content 1</td>
-                            <td>Content 2</td>
-                            <td>Content 3</td>
-                            <td>Content 4</td>
-                            <td>Content 5</td>
-                            <td>Content 6</td>
-                            <td>Content 7</td>
+                            <td>Engenharia de Software <br><b>(Cursando)</b></td>
+                            <td><b>PHP:</b> Desenvolvedor Web</td>
+                            <td><b>Técnico: </b>Admnistração e Informática 800h</td>
+                        </tr>
+                        <tr>
+                            <td>Pós Graduação: Desenvolvimento Web Full Stack<br><b>(Cursando)</b></td>
+                            <td><b>SQL Server</b> & <b>mySQL</b></td>
+                            <td><b>Inglês: </b>Desejável </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                         </tr>
                     </tbody>
+                    
                     <tfoot>
                         <tr>
                             <td></td>
                             <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>Testando</td>
+                            <td>Marcelo Magalhães</td>
                         </tr>
                     </tfoot>
                 </table>
@@ -367,14 +334,10 @@
     <section id="contact" class="intro main-bg section">
         <div class="main-content intro-content">
             <div class="intro-text-content">
-                <h2>January brings us Firefox 85</h2>
-                <p>Lorem ipsum dolor, sit amet
-                    consectetur adipisicing elit.
-                    Totam, exercitationem. Tenetur
-                    vitae provident incidunt dicta
-                    ssumenda praesentium ex minima quam?
-                    Dolorem exercitationem dignissimos fuga
-                    provident neque, error beatae rem veniam!</p>
+                <h2>Este é meu portifólio</h2>
+                <p>Espero que você tenha gostado,
+                    caso tenha interesse em me contratar, entre em contato comigo.
+                </p>
             </div>
             <div class="intro-img">
                 <img src="assets/img/javascript.svg" alt="Logo de HTML, CSS e JS.">
@@ -400,7 +363,9 @@
                         <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
                     </div>
                     <div class="form-group full-width">
+                        <a href="mailto:magaldev7@gmail.com?subject=Contato&body=Olá, gostaria de entrar em contato com o Sr. Marcelo Magalhães, para verificar se o Sr. tem interesse em participar de um processo seletivo." target="_blank">
                         <button type="submit">Send Message</button>
+                    </a>
                     </div>
                 </fieldset>
             </div>

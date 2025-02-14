@@ -1,15 +1,20 @@
-let count =1;
+let count = 1;
 document.getElementById("radio1").checked = true;
 
-setInterval( function(){
-    nextImage();
-}, 5000)
+let interval = setInterval(nextImage, 5000);
 
-function nextImage(){
+function nextImage() {
     count++;
-    if(count>4){
+    if (count > 6) {
         count = 1;
     }
 
-    document.getElementById("radio"+count).checked = true;
+    document.getElementById("radio" + count).checked = true;
+}
+
+function resetCounter(num) {
+    count = num;
+    clearInterval(interval); // Limpa o intervalo existente
+    interval = setInterval(nextImage, 5000); // Inicia um novo intervalo
+    console.log("Counter reset to: " + count);
 }
