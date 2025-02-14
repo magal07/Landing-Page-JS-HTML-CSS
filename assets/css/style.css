@@ -1,3 +1,4 @@
+
 .intro-content {
     position: relative;
     /* top: -8rem; */
@@ -199,6 +200,8 @@ a:visited {
 /* mobile */
 @media (max-width: 800px) {
 
+
+
     .intro-content,
     .grid {
         grid-template-columns: 1fr;
@@ -310,6 +313,7 @@ a:visited {
 .slider-container {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .intro-text-content {
@@ -335,7 +339,7 @@ a:visited {
 }
 
 .slide img {
-    width: 800px; /* Redimensionar imagem para caber no slide */
+    width: 800px ; /* Redimensionar imagem para caber no slide */
     /* height: 100%; Redimensionar imagem para caber no slide */
 }
 
@@ -420,101 +424,13 @@ a:visited {
     background: var(--white-color);
 }
 
-@media (max-width: 800px) {
 
-    .slider {
-        width: 100%;
-        height: auto;
-        border-width: 3px;
-        flex-direction: column;
-    }
-
-    .slider-container {
-        width: 100%;
-        height: auto;
-    }
-
-    .intro-text-content {
-        max-width: 100%;
-    }
-
-    .slides {
-        width: 100%;
-        height: auto;
-    }
-
-    .slide {
-        width: 100%;
-        height: auto;
-    }
-
-    .slide img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-
-    .manual-navigation,
-    .navigation-auto {
-        width: 100%;
-        margin-top: -30px;
-    }
-
-    .manual-btn {
-        padding: 4px;
-        margin-right: 20px;
-    }
-
-    .navigation-auto div {
-        margin-right: 20px;
-    }
+@media (max-height: 768px){
+#slideshow {
+	display: none;
 }
 
-@media (max-width: 480px) {
-    .slider {
-        border-width: 2px;
-    }
-
-    .manual-btn {
-        padding: 3px;
-        margin-right: 15px;
-    }
-
-    .navigation-auto div {
-        margin-right: 15px;
-    }
+#meus-estudos{
+	display: none;
 }
-
-/* Ajustes específicos para telas de 400px */
-@media (max-width: 400px) {
-    .slider {
-        border-width: 1px; /* Borda mais fina para telas pequenas */
-        border-radius: 5px; /* Bordas menos arredondadas */
-    }
-
-    .slides {
-        height: 200px; /* Altura reduzida para telas pequenas */
-    }
-
-    .slide img {
-        height: 200px; /* Ajuste da altura da imagem */
-    }
-
-    .manual-navigation,
-    .navigation-auto {
-        margin-top: -20px; /* Ajuste da posição dos botões de navegação */
-    }
-
-    .manual-btn {
-        padding: 2px; /* Botões menores */
-        margin-right: 10px; /* Menor espaçamento entre botões */
-    }
-
-    .navigation-auto div {
-        margin-right: 10px; /* Menor espaçamento entre botões automáticos */
-    }
-
-    .intro-text-content {
-        font-size: 14px; /* Reduzir o tamanho do texto para caber melhor */
-    }
 }

@@ -1,7 +1,7 @@
 let count = 1;
 document.getElementById("radio1").checked = true;
 
-let interval = setInterval(nextImage, 5000);
+let interval = setInterval(nextImage, 7000);
 
 function nextImage() {
     count++;
@@ -15,6 +15,6 @@ function nextImage() {
 function resetCounter(num) {
     count = num;
     clearInterval(interval); // Limpa o intervalo existente
-    interval = setInterval(nextImage, 5000); // Inicia um novo intervalo
+    interval = setInterval(nextImage, 7000); // Inicia um novo intervalo
     console.log("Counter reset to: " + count);
 }
