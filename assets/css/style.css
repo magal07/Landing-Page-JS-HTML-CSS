@@ -197,6 +197,14 @@ a:visited {
     /* Remove a sublinha do link visitado, se necessário */
 }
 
+a:hover {
+	color: var(--menu-underline-color);
+}
+
+a:active{ 
+	color: blue;
+}
+
 /* mobile */
 @media (max-width: 800px) {
 
@@ -432,5 +440,6 @@ a:visited {
 
 #meus-estudos{
 	display: none;
+
 }
 }
