@@ -415,7 +415,8 @@ a:active {
 }
 
 
-@media (max-width: 800px) {
+/* Para telas pequenas, como tablets */
+@media (max-width: 768px) {
     .slider {
         width: 100%;
         height: auto;
@@ -424,14 +425,14 @@ a:active {
 
     .slides {
         display: flex;
-        width: 600%; 
+        width: 600%;
         height: auto;
         transition: margin-left 0.5s ease-in-out;
     }
 
     .slide {
-        width: 16.6667%; /* Agora cada slide ocupa 1/6 do total */
-        flex-shrink: 0; /* Evita redimensionamento automático */
+        width: 16.6667%; /* Cada slide ocupa 1/6 do total */
+        flex-shrink: 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -445,40 +446,166 @@ a:active {
 
     .manual-navigation,
     .navigation-auto {
-        width: 70rem;
+        width: 100%;
         position: relative;
     }
 
     .manual-btn {
         padding: 6px;
-        margin-right: 0 10px;
+        margin-right: 10px;
     }
 
-    
-
-    /* disposição de imagens no slide mobile 2 dias pra ajeitar mais conseguimos!*/
-
-    #radio1:checked~.first {
+    #radio1:checked ~ .first {
         margin-left: 0;
     }
     
-    #radio2:checked~.first {
+    #radio2:checked ~ .first {
         margin-left: -16.7%;
     }
     
-    #radio3:checked~.first {
+    #radio3:checked ~ .first {
         margin-left: -33.4%;
     }
     
-    #radio4:checked~.first {
+    #radio4:checked ~ .first {
         margin-left: -50%;
     }
     
-    #radio5:checked~.first {
+    #radio5:checked ~ .first {
         margin-left: -66.7%;
     }
     
-    #radio6:checked~.first {
+    #radio6:checked ~ .first {
         margin-left: -83.3%;
-    }   
+    }
+}
+
+/* Para celulares menores que 480px */
+@media (max-width: 480px) {
+    .slider {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .slides {
+        display: flex;
+        width: 600%;
+        height: auto;
+        transition: margin-left 0.5s ease-in-out;
+    }
+
+    .slide {
+        width: 50%; /* Ajustado para 2 slides por vez em telas menores */
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slide img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .manual-navigation,
+    .navigation-auto {
+        width: 100%;
+        position: relative;
+    }
+
+    .manual-btn {
+        padding: 4px;
+        margin-right: 5px;
+    }
+
+    #radio1:checked ~ .first {
+        margin-left: 0;
+    }
+
+    #radio2:checked ~ .first {
+        margin-left: -50%;
+    }
+
+    #radio3:checked ~ .first {
+        margin-left: -100%;
+    }
+
+    #radio4:checked ~ .first {
+        margin-left: -150%;
+    }
+
+    #radio5:checked ~ .first {
+        margin-left: -200%;
+    }
+
+    #radio6:checked ~ .first {
+        margin-left: -250%;
+    }
+}
+
+/* Para celulares muito pequenos, como 320px */
+@media (max-width: 320px) {
+    .slider {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .slides {
+        display: flex;
+        width: 600%;
+        height: auto;
+        transition: margin-left 0.5s ease-in-out;
+    }
+
+    .slide {
+        width: 100%; /* Apenas 1 slide por vez */
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slide img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .manual-navigation,
+    .navigation-auto {
+        width: 100%;
+        position: relative;
+    }
+
+    .manual-btn {
+        padding: 4px;
+        margin-right: 3px;
+    }
+
+    #radio1:checked ~ .first {
+        margin-left: 0;
+    }
+
+    #radio2:checked ~ .first {
+        margin-left: -100%;
+    }
+
+    #radio3:checked ~ .first {
+        margin-left: -200%;
+    }
+
+    #radio4:checked ~ .first {
+        margin-left: -300%;
+    }
+
+    #radio5:checked ~ .first {
+        margin-left: -400%;
+    }
+
+    #radio6:checked ~ .first {
+        margin-left: -500%;
+    }
 }
