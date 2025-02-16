@@ -1,4 +1,3 @@
-
 .intro-content {
     position: relative;
     /* top: -8rem; */
@@ -198,11 +197,11 @@ a:visited {
 }
 
 a:hover {
-	color: var(--menu-underline-color);
+    color: var(--menu-underline-color);
 }
 
-a:active{ 
-	color: blue;
+a:active {
+    color: blue;
 }
 
 /* mobile */
@@ -308,138 +307,178 @@ a:active{
 
 
 /* SLIDE SHOW */
-.slider {
+.slider{
     margin: 0 auto;
-    width: 800px;
-    height: 400px;
-    overflow: hidden;
-    border: 5px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.9); 
+		width: 800px;
+		height: 400px;
+		overflow: hidden;
 }
 
-.slider-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.slider {
+    border: 0px solid var(--white-color);
+    box-shadow: 0px 0px 15px 5px var(--white-color);
+    transition: 0.5s ease-in-out, border 0.5s ease-in-out; /* Especifica a transição para a sombra e borda */
 }
 
-.intro-text-content {
-    text-align: left; 
-    max-width: 800px; 
-    margin: 0 auto 20px auto;
+.slider:hover {
+    box-shadow: 0px 0px 25px 10px var(--white-color); /* Aumenta o brilho da sombra no hover */
 }
 
 .slides {
-    width: 400%; 
-    height: 400px;
-    display: flex;
+	width: 400%;
+	height: 400px;
+	display: flex;;
 }
-
 .slides input {
-    display: none;
+	display: none;
 }
-
-.slide {
-    width: 25%; 
-    position: relative;
-    transition: 2s;
+.slide{
+	width: 25%;
+	position: relative;
+	transition: 2s
 }
-
-.slide img {
-    width: 800px ; /* Redimensionar imagem para caber no slide */
-    /* height: 100%; Redimensionar imagem para caber no slide */
+.slide img{
+	width: 800px;
 }
-
 .manual-navigation{
-    position: absolute;
-    width: 800px;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
+	position: absolute;
+	width: 800px;
+	margin-top: -40px;
+	display: flex;
+	justify-content: center;
 }
-
 .manual-btn{
-    border: 2px solid var(--white-color);
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.8s;
+	border: 2px solid var(--menu-underline-color);
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 0.8s;
 }
-
 .manual-btn:not(:last-child) {
-    margin-right: 40px;
+	margin-right: 40px;
 }
-
 .manual-btn:hover{
-    background: var(--menu-underline-color);
+	background: var(--white-color);
 }
-
 #radio1:checked ~ .first{
-    margin-left: 0;
+	margin-left: 0;
 }
 #radio2:checked ~ .first{
-    margin-left: -25%;
+	margin-left: -25%;
 }
 #radio3:checked ~ .first{
-    margin-left: -50%;
+	margin-left: -50%;
 }
 #radio4:checked ~ .first{
-    margin-left: -75%;
+	margin-left: -75%;
 }
 #radio5:checked ~ .first{
-    margin-left: -100%;
+	margin-left: -100%;
 }
 #radio6:checked ~ .first{
-    margin-left: -125%;
+	margin-left: -125%;
 }
-
 .navigation-auto div{
-    border: 2px solid var(--menu-underline-color);
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
+	border: 2px solid var(--menu-underline-color);
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
 }
-
 .navigation-auto{
-    position: absolute;
-    width: 800px;
-    margin-top: 360px;
-    display: flex;
-    justify-content: center;
+	position: absolute;
+	width: 800px;
+	margin-top: 360px;
+	display: flex;
+	justify-content: center;
 }
 .navigation-auto div:not(:last-child){
-    margin-right: 40px;
+	margin-right: 40px;
 }
-
 #radio1:checked ~ .navigation-auto .auto-btn1{
-    background: var(--white-color);
+	background: var(--white-color);
 }
 #radio2:checked ~ .navigation-auto .auto-btn2{
-    background: var(--white-color);
+	background: var(--white-color);
 }
 #radio3:checked ~ .navigation-auto .auto-btn3{
-    background: var(--white-color);
+	background: var(--white-color);
 }
 #radio4:checked ~ .navigation-auto .auto-btn4{
-    background: var(--white-color);
+	background: var(--white-color);
 }
 #radio5:checked ~ .navigation-auto .auto-btn5{
-    background: var(--white-color);
+	background: var(--white-color);
 }
 #radio6:checked ~ .navigation-auto .auto-btn6{
-    background: var(--white-color);
+	background: var(--white-color);
 }
 
 
-@media (max-height: 768px){
-#slideshow {
-	display: none;
-}
+@media (max-width: 800px) {
+    .slider {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
 
-#meus-estudos{
-	display: none;
+    .slides {
+        display: flex;
+        width: 600%; 
+        height: auto;
+        transition: margin-left 0.5s ease-in-out;
+    }
 
-}
+    .slide {
+        width: 16.6667%; /* Agora cada slide ocupa 1/6 do total */
+        flex-shrink: 0; /* Evita redimensionamento automático */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slide img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .manual-navigation,
+    .navigation-auto {
+        width: 70rem;
+        position: relative;
+    }
+
+    .manual-btn {
+        padding: 6px;
+        margin-right: 0 10px;
+    }
+
+    
+
+    /* disposição de imagens no slide mobile 2 dias pra ajeitar mais conseguimos!*/
+
+    #radio1:checked~.first {
+        margin-left: 0;
+    }
+    
+    #radio2:checked~.first {
+        margin-left: -16.7%;
+    }
+    
+    #radio3:checked~.first {
+        margin-left: -33.4%;
+    }
+    
+    #radio4:checked~.first {
+        margin-left: -50%;
+    }
+    
+    #radio5:checked~.first {
+        margin-left: -66.7%;
+    }
+    
+    #radio6:checked~.first {
+        margin-left: -83.3%;
+    }   
 }
