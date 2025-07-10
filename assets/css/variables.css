@@ -1,7 +1,8 @@
 :root {
     --primary-color: #0A1128;
+    --primary-color-checked: #0a1128aa;
     --white-color: #FFFFFF;
     --light-gray-color: #EEEE;
-    --menu-underline-color: crimson;
+    --menu-underline-color: rgb(62, 170, 219);
     --gap: 3rem;
 }

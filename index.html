@@ -3,20 +3,30 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Language" content="pt-br">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Marcelo Magalhães - Desenvolvedor Full Stack com projetos em C#, JS, PHP e mais.">
+    <meta name="author" content="Marcelo Magalhães">
+    <meta name="keywords" content="portfólio, desenvolvedor, fullstack, C#, JavaScript, PHP, sistemas, API, landing page">
+
     <title>Landing Page</title>
     <link rel="icon" type="image/png" href="assets/img/Brazil.png" />
+    <link rel="shortcut icon" href="assets/img/Brazil.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <link rel="stylesheet" href="assets/css/variables.css">
     <link rel="stylesheet" href="assets/css/elements.css">
     <link rel="stylesheet" href="assets/css/classes.css">
     <link rel="stylesheet" href="assets/css/menu.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/js/script.js">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
+
+    <script src="assets/js/script.js" defer></script>
 </head>
 
 <body>
@@ -25,7 +35,9 @@
     <aside class="menu white-bg">
         <div class="main-content menu-content">
             <h1 onclick="getElementById('close-menu').checked = false">
-                <a href="#home">Home</a>
+                <a href="#home" title="Início" aria-label="Ir para a seção inicial">
+                    <i class="fas fa-home"></i>
+                </a>
             </h1>
             <nav>
                 <ul onclick="getElementById('close-menu').checked = false">
@@ -33,20 +45,20 @@
                     <li><a href="#grid-one">Projetos</a></li>
                     <li><a href="#grid-three">Projetos Casuais</a></li>
                     <li><a href="#slideshow">Slide Show</a></li>
-                    <!-- <li><a href="#grid-two">Grid-Two</a></li> -->
                     <li><a href="#meus-estudos">Meus Estudos</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </aside>
     <div class="menu-spacing"></div>
+
     <section id="home" class="intro main-bg section">
         <div class="main-content intro-content">
             <div class="intro-text-content">
-                <h2>Seja muito bem vindo!</h2>
-                <p>Me chamo Marcelo Magalhães, sou 
-                    Formado em Análise e Desenvolvimento de Sistemas,
+                <h2>Olá,</h2>
+                <p> Me chamo Marcelo Magalhães, sou 
+                    formado em Análise e Desenvolvimento de Sistemas,
                     Pós Graduado em MBA - Inteligência Artificial e Big Data,
                     e também possuo Pós Graduação em Desenvolvimento Web Full 
                     Stack. Também sou estudante de Engenharia de Software 5º 
@@ -63,10 +75,7 @@
             <p class="grid-description">Para visualizar a veracidade do projeto, clique no título.</p>
             <div class="grid">
                 <article>
-                    <h3><a href="https://www.linkedin.com/posts/marcelo-magalh%C3%A3es-513b6b283_projeto-inventory-manag
-                        ement-system-o-projeto-activity-7323032866655731714-Z35O?utm_source=share&utm_medium=member_desk
-                        top&rcm=ACoAAEUMpx8B1r1cvas1z42HDr1oENLxer17frY">Projeto:<br> Inventory Management System</a>
-                    </h3>
+                    <h3><a href="https://www.linkedin.com/posts/marcelo-magalh%C3%A3es-513b6b283_projeto-inventory-management-system-o-projeto-activity-7323032866655731714-Z35O?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEUMpx8B1r1cvas1z42HDr1oENLxer17frY">Projeto:<br> Inventory Management System</a>                    </h3>
                     <p>
                         O projeto em questão, consiste em uma aplicação de gerenciamento de ordens de produção e controle
                          de estoque, desenvolvida para atender empresas que precisam acompanhar o fluxo de materiais e 
@@ -170,7 +179,6 @@
                         Tão breve, criarei formas de exportação de relatórios sejam
                         em CSV/Excel ou emPDF e também consultas personalizadas.
                     </p>
-                </article>
                 </article>
                 <article>
                     <h3><a href="https://www.linkedin.com/posts/marcelo-magalh%C3%A3es-513b6b283_desenvolvimentoweb-
@@ -329,22 +337,21 @@
                                 <div class="slide first">
                                     <!-- <a href="#"> -->
                                         <img src="assets/img/01_home_dark.png" alt="Projeto Sales Web">
-                                    </a>
                                 </div>
                                 <div class="slide">
-                                    <img src="assets/img/04_POapi.png" alt="ProductionOrdersAPI1">
+                                    <img src="assets/img/InventoryManagementSystem.png" alt="InventoryManagementSystem">
+                                </div>
+                                <div class="slide">
+                                    <img src="assets/img/AllEasyDashboard.png" alt="AllEasyDashboard">
                                 </div>
                                 <div class="slide">
                                     <img src="assets/img/05_POapi2.png" alt="ProductionOrdersAPI2">
                                 </div>
                                 <div class="slide">
-                                    <img src="assets/img/06_Bearer-JWT.png" alt="ProductionOrdersAPI - JWT TOKEN">
-                                </div>
-                                <div class="slide">
                                     <img src="assets/img/07_PHP.png" alt="Student PHP">
                                 </div>
                                 <div class="slide">
-                                    <img src="assets/img/03.png" alt="Console-Xadrez">
+                                    <img src="assets/img/student.png" alt="School Management">
                                 </div>
                                 <!--Navigation auto-->
                                 <div class="navigation-auto">
@@ -370,88 +377,52 @@
             </div>
         </div>
     </section>
-    <script src="assets/js/script.js"></script>
 
-    <!--New Grid -Caso precise 
-    <section id="grid-two" class="grid-one main-bg section">
-        <div class="main-content grid-one-content">
-            <h2 class="gid-min-heading">My Grid</h2>
-            <p class="grid-description">Uma breve descrição</p>
-            <div class="grid">
-                <article>
-                    <h3>Teste 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia unde, hic ab voluptate inventore
-                        sit rem molestias in illo maiores aliquid architecto qui blanditiis nesciunt quas magnam sint
-                        dolore molestiae!</p>
-                </article>
-                <article>
-                    <h3>Teste 2</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia unde, hic ab voluptate inventore
-                        sit rem molestias in illo maiores aliquid architecto qui blanditiis nesciunt quas magnam sint
-                        dolore molestiae!</p>
-                </article>
-                <article>
-                    <h3>Teste 3</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia unde, hic ab voluptate inventore
-                        sit rem molestias in illo maiores aliquid architecto qui blanditiis nesciunt quas magnam sint
-                        dolore molestiae!</p>
-                </article>
-            </div>
+    <section id="meus-estudos" class="grid-one main-bg section">
+        <div class="container my-4">
+          <h2>Estudos</h2>
+          <div class="responsive-table">
+            <table>
+              <caption>Nivelamento de estudos.</caption>
+              <thead>
+                <tr>
+                  <th>Ensino Superior</th>
+                  <th>Cursos TI</th>
+                  <th>Complementares</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Curso">Análise e Desenvolvimento de Sistemas<br><strong>(Formado)</strong></td>
+                  <td data-label="Cursos TI"><strong>C#:</strong> Programação Orientada a Objetos</td>
+                  <td data-label="Complementares"><strong>Pacote Office:</strong> Excel, PowerPoint e Word</td>
+                </tr>
+                <tr>
+                  <td data-label="Curso">Pós Graduação: Inteligência Artificial e Big Data<br><strong>(Formado)</strong></td>
+                  <td data-label="Cursos TI"><strong>JS | TS | SQL | DB(s):</strong> (Backend)</td>
+                  <td data-label="Complementares"><strong>Redes Lógicas:</strong> Implantação de Projeto (SENAI)</td>
+                </tr>
+                <tr>
+                    <td data-label="Curso">Pós Graduação: Desenvolvimento Web Full Stack<br><strong>(Formado)</strong></td>
+                    <td data-label="Cursos TI"><strong>PHP:</strong> Desenvolvedor Web</td>
+                    <td data-label="Complementares"><strong>Técnico:</strong> Administração e Informática 800h</td>
+                </tr>
+                <tr>
+                  <td data-label="Curso">Engenharia de Software<br><strong>(Cursando)</strong></td>
+                  <td data-label="Cursos TI"><strong>SQL Server</strong> & <strong>mySQL</strong></td>
+                  <td data-label="Complementares"><strong>Inglês:</strong> Academy Backstage (Cursando)</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="3" class="text-end">Atualizado: 10 JUL 25</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
         </div>
-    </section>
--->
-    <section id="meus-estudos" class="grid-one white-bg section">
-        <div class="main-content top3-content">
-            <h2>Sobre meus estudos</h2>
-            <div class="responsive-table">
-                <table>
-                    <caption>Nivelamento de estudos.</caption>
-                    <thead>
-                        <tr>
-                            <th>Superior</th>
-                            <th>Cursos TI</th>
-                            <th>Complementares</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Análise e Desenvolvimento de Sistemas<br><b>(Formado)</b></td>
-                            <td><b>C#:</b> Programação Orientado a Objetos</td>
-                            <td><b>Pacote Office:</b> Excel, PowerPoint e Word</td>
-                        </tr>
-                        <tr>
-                            <td>Pós Graduação: Inteligência Artificial e Big Data<br><b>(Formado)</b></td>
-                            <td><b>JS | TS:</b> Básico ao Avançado</td>
-                            <td><b>Redes Lógicas:</b> Implantação de Projeto (SENAI)</td>
-                        </tr>
-                        <tr>
-                            <td>Engenharia de Software <br><b>(Cursando)</b></td>
-                            <td><b>PHP:</b> Desenvolvedor Web</td>
-                            <td><b>Técnico: </b>Admnistração e Informática 800h</td>
-                        </tr>
-                        <tr>
-                            <td>Pós Graduação: Desenvolvimento Web Full Stack<br><b>(Cursando)</b></td>
-                            <td><b>SQL Server</b> & <b>mySQL</b></td>
-                            <td><b>Inglês: </b>Desejável </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-
-                    <tfoot>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td>Marcelo Magalhães</td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </div>
-        </div>
-    </section>
+      </section>
+      
 
     <div class="menu-spacing"></div>
     <section id="contact" class="intro main-bg section">
@@ -468,13 +439,13 @@
 
             <div class="contact-form">
                 <fieldset class="form-grid">
-                    <legend>Contact me</legend>
+                    <legend>Contate-me: </legend>
                     <div class="form-group">
-                        <label for="first-name">First Name</label>
+                        <label for="first-name">Primeiro Nome</label>
                         <input type="text" name="first-name" id="first-name" placeholder="Your name">
                     </div>
                     <div class="form-group">
-                        <label for="last-name">Last Name</label>
+                        <label for="last-name">Último Nome</label>
                         <input type="text" name="last-name" id="last-name" placeholder="Your last name">
                     </div>
                     <div class="form-group">
@@ -482,13 +453,13 @@
                         <input type="email" name="email" id="email" placeholder="Your e-mail">
                     </div>
                     <div class="form-group full-width">
-                        <label for="message">Message</label>
+                        <label for="message">Mensagem</label>
                         <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
                     </div>
                     <div class="form-group full-width">
                         <a href="mailto:magaldev7@gmail.com?subject=Contato&body=Olá, gostaria de entrar em contato com o Sr. Marcelo Magalhães, para verificar se o Sr. tem interesse em participar de um processo seletivo."
                             target="_blank">
-                            <button type="submit">Send Message</button>
+                            <button type="submit">Enviar Mensagem</button>
                         </a>
                     </div>
                 </fieldset>
@@ -499,7 +470,9 @@
         <p><a rel="nofollow" target="_blank" href="https://www.linkedin.com/in/marcelo-magalhães-513b6b283/">Feito com
                 muita dedicação por: Marcelo Magalhães</a></p>
     </footer>
-    <a class="back-to-top" href="#">➤</a>
+    <a class="back-to-top" href="#" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 </body>
 
 </html>

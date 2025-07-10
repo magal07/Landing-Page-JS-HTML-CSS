@@ -132,7 +132,7 @@
 
 .form-group button {
     border: 0.5rem solid var(--white-color);
-    background: none;
+    background: var(--primary-color);
     color: var(--white-color);
     padding: 1.5rem 2rem;
     font-size: 3rem;
@@ -144,8 +144,8 @@
 
 .form-group button:hover {
     border: 0.5rem solid var(--white-color);
-    background: var(--white-color);
-    color: var(--primary-color);
+    background: var(--primary-color-checked);
+    color: var(--white-color);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     transform: scale(1.05);
 }
@@ -203,6 +203,44 @@ a:hover {
 a:active {
     color: blue;
 }
+
+/* table */
+
+.responsive-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: inherit;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.responsive-table th {
+    background-color: var(--primary-color-checked);
+    color: var(--white-color);
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-weight: bold;
+}
+
+.responsive-table td {
+    padding: 0.75rem 1rem;
+    border-top: 1px solid var(--primary-color-checked);
+}
+
+.responsive-table .text-end {
+    color: var(--primary-color);
+    text-align: right;
+    padding-right: 1rem;
+    background-color: var(--white-color);
+}
+
+.responsive-table caption {
+    color: var(--white-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.75rem 0;
+}
+
 
 /* mobile */
 @media (max-width: 800px) {
@@ -353,12 +391,13 @@ a:active {
 	border-radius: 10px;
 	cursor: pointer;
 	transition: 0.8s;
+    background-color: var(--white-color);
 }
 .manual-btn:not(:last-child) {
 	margin-right: 40px;
 }
 .manual-btn:hover{
-	background: var(--white-color);
+	background: var(--primary-color);
 }
 #radio1:checked ~ .first{
 	margin-left: 0;
@@ -490,10 +529,10 @@ a:active {
 
     .slides {
         display: flex;
-        width: 600%;
-        height: auto;
-        transition: margin-left 0.5s ease-in-out;
-    }
+        width: 600%; /* ou 400% dependendo do número de slides */
+        transition: margin-left 0.8s ease-in-out;
+      }
+      
 
     .slide {
         width: 50%; /* Ajustado para 2 slides por vez em telas menores */
@@ -506,8 +545,24 @@ a:active {
     .slide img {
         width: 100%;
         height: auto;
-        object-fit: cover;
-    }
+        object-fit: contain;
+        border-radius: 0.5rem;
+      }
+
+    .slider,
+    .slide img {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+
+    .slider-container {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        aspect-ratio: 16 / 9; /* Mantém proporção em qualquer tela */
+      }
 
     .manual-navigation,
     .navigation-auto {
@@ -515,10 +570,35 @@ a:active {
         position: relative;
     }
 
+    .navigation-auto div {
+        opacity: 0.5;
+        background: transparent;
+      }
+      
+      #radio1:checked ~ .navigation-auto .auto-btn1,
+      #radio2:checked ~ .navigation-auto .auto-btn2,
+      #radio3:checked ~ .navigation-auto .auto-btn3,
+      #radio4:checked ~ .navigation-auto .auto-btn4,
+      #radio5:checked ~ .navigation-auto .auto-btn5,
+      #radio6:checked ~ .navigation-auto .auto-btn6 {
+        background: var(--menu-underline-color);
+        opacity: 1;
+      }      
+
     .manual-btn {
-        padding: 4px;
-        margin-right: 5px;
-    }
+        border: 2px solid var(--menu-underline-color);
+        padding: 6px;
+        border-radius: 50%;
+        cursor: pointer;
+        background: transparent;
+        transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+      }
+      
+      .manual-btn:hover {
+        background-color: var(--menu-underline-color);
+        transform: scale(1.1);
+      }
+      
 
     #radio1:checked ~ .first {
         margin-left: 0;
