@@ -1,3 +1,3 @@
 Landing Page - Created for curricular use.
 
-Link acess: https://marcelomagalhaes.netlify.app
+Link access: https://marcelomagalhaes.netlify.app
