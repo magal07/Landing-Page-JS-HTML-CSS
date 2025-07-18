@@ -19,7 +19,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/variables.css">
     <link rel="stylesheet" href="assets/css/elements.css">
@@ -319,76 +321,64 @@
 
     <section id="slideshow" class="grid-one main-bg section">
         <div class="main-content grid-one-content">
-            <h2 class="grid-main-heading">Slide Show</h2>
-            <p>Confira alguns de meus projetos no slideshow abaixo:</p>
-            <div class="grid">
-                    <div class="slider-container">
-                        <div class="slider">
-                            <div class="slides">
-                                <!--RadioButton-->
-                                <input type="radio" name="radio-btn" id="radio1">
-                                <input type="radio" name="radio-btn" id="radio2">
-                                <input type="radio" name="radio-btn" id="radio3">
-                                <input type="radio" name="radio-btn" id="radio4">
-                                <input type="radio" name="radio-btn" id="radio5">
-                                <input type="radio" name="radio-btn" id="radio6">
-
-                                <!--Slide images-->
-                                <div class="slide first">
-                                    <a href="https://www.linkedin.com/posts/marcelo-magalh%C3%A3es-513b6b283_desenvolvimentoweb-gestaetodevendas-mvc-activity-7294091548776960001-6LL1?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">
-                                        <img src="assets/img/01_home_dark.png" alt="Projeto Sales Web">
-                                    </a>
-                                </div>
-                                <div class="slide">
-                                    <a href="https://www.linkedin.com/posts/marcelo-magalh%C3%A3es-513b6b283_projeto-inventory-management-system-o-projeto-activity-7323032866655731714-Z35O?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">
-                                        <img src="assets/img/InventoryManagementSystem.png" alt="Inventory Management System">
-                                    </a>
-                                </div>
-                                <div class="slide">
-                                    <a href="https://www.linkedin.com/posts/marcelo-magalh%C3%A3es-513b6b283_laravel-php-desenvolvimentoweb-activity-7345871408142389249-qrR2?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">
-                                        <img src="assets/img/AllEasyDashboard.png" alt="AllEasy Dashboard">
-                                    </a>
-                                </div>
-                                <div class="slide">
-                                    <a href="https://github.com/magal07/ProductionOrdersAPI" target="_blank" rel="noopener noreferrer">
-                                        <img src="assets/img/05_POapi2.png" alt="Production Orders API">
-                                    </a>
-                                </div>
-                                <div class="slide">
-                                    <a href="https://www.linkedin.com/posts/marcelo-magalh%C3%A3es-513b6b283_javascript-webpack-nodejs-activity-7314275300626866176-bR6-?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">
-                                        <img src="assets/img/07_PHP.png" alt="Contact Agenda Node/PHP">
-                                    </a>
-                                </div>
-                                <div class="slide">
-                                    <a href="https://www.linkedin.com/posts/marcelo-magalh%C3%A3es-513b6b283_api-rest-backend-react-frontend-activity-7317233227218219008-xeWG?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">
-                                        <img src="assets/img/student.png" alt="School Management React/Node">
-                                    </a>
-                                </div>
-                                
-                                <!--Navigation auto-->
-                                <div class="navigation-auto">
-                                    <div class="auto-btn1"></div>
-                                    <div class="auto-btn2"></div>
-                                    <div class="auto-btn3"></div>
-                                    <div class="auto-btn4"></div>
-                                    <div class="auto-btn5"></div>
-                                    <div class="auto-btn6"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="manual-navigation">
-                            <label for="radio1" class="manual-btn" onclick="resetCounter(1)"></label>
-                            <label for="radio2" class="manual-btn" onclick="resetCounter(2)"></label>
-                            <label for="radio3" class="manual-btn" onclick="resetCounter(3)"></label>
-                            <label for="radio4" class="manual-btn" onclick="resetCounter(4)"></label>
-                            <label for="radio5" class="manual-btn" onclick="resetCounter(5)"></label>
-                            <label for="radio6" class="manual-btn" onclick="resetCounter(6)"></label>
-                        </div>
-                    </div>
-                </div>
+          <h2 class="grid-main-heading">Slide Show</h2>
+          <p>Confira alguns de meus projetos no slideshow abaixo:</p>
+      
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide">
+                <a href="https://www.linkedin.com/posts/marcelo-magalh%C3%A3es-513b6b283_desenvolvimentoweb-gestaetodevendas-mvc-activity-7294091548776960001-6LL1?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/img/01_home_dark.png" alt="Projeto Sales Web" />
+                </a>
+              </div>
+      
+              <!-- Slide 2 -->
+              <div class="swiper-slide">
+                <a href="https://www.linkedin.com/posts/marcelo-magalh%C3%A3es-513b6b283_projeto-inventory-management-system-o-projeto-activity-7323032866655731714-Z35O?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/img/InventoryManagementSystem.png" alt="Inventory Management System" />
+                </a>
+              </div>
+      
+              <!-- Slide 3 -->
+              <div class="swiper-slide">
+                <a href="https://www.linkedin.com/posts/marcelo-magalh%C3%A3es-513b6b283_laravel-php-desenvolvimentoweb-activity-7345871408142389249-qrR2?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/img/AllEasyDashboard.png" alt="AllEasy Dashboard" />
+                </a>
+              </div>
+      
+              <!-- Slide 4 -->
+              <div class="swiper-slide">
+                <a href="https://github.com/magal07/ProductionOrdersAPI" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/img/05_POapi2.png" alt="Production Orders API" />
+                </a>
+              </div>
+      
+              <!-- Slide 5 -->
+              <div class="swiper-slide">
+                <a href="https://www.linkedin.com/posts/marcelo-magalh%C3%A3es-513b6b283_javascript-webpack-nodejs-activity-7314275300626866176-bR6-?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/img/07_PHP.png" alt="Contact Agenda Node/PHP" />
+                </a>
+              </div>
+      
+              <!-- Slide 6 -->
+              <div class="swiper-slide">
+                <a href="https://www.linkedin.com/posts/marcelo-magalh%C3%A3es-513b6b283_api-rest-backend-react-frontend-activity-7317233227218219008-xeWG?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/img/student.png" alt="School Management React/Node" />
+                </a>
+              </div>
             </div>
+      
+            <!-- Botões de navegação -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+      
+            <!-- Paginação -->
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
-    </section>
+      </section>
+      
 
     <section id="meus-estudos" class="grid-one main-bg section">
         <div class="container my-4">
@@ -483,6 +473,15 @@
     <a class="back-to-top" href="#" aria-label="Voltar ao topo">
         <i class="fas fa-arrow-up"></i>
     </a>
+
+    <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<!-- Seu JS -->
+<script src="assets/js/script.js"></script>
 </body>
 
 

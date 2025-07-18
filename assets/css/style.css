@@ -343,349 +343,76 @@ a:active {
 
 /* fechando o bloco mobile */
 
-
-/* SLIDE SHOW */
-.slider{
-    margin: 0 auto;
-		width: 800px;
-		height: 400px;
-		overflow: hidden;
-}
-
-.slider {
-    border: 0px solid var(--white-color);
-    box-shadow: 0px 0px 15px 5px var(--white-color);
-    transition: 0.5s ease-in-out, border 0.5s ease-in-out; /* Especifica a transição para a sombra e borda */
-}
-
-.slider:hover {
-    box-shadow: 0px 0px 25px 10px var(--white-color); /* Aumenta o brilho da sombra no hover */
-}
-
-.slides {
-	width: 400%;
-	height: 400px;
-	display: flex;;
-}
-.slides input {
-	display: none;
-}
-.slide{
-	width: 25%;
-	position: relative;
-	transition: 2s
-}
-.slide img{
-	width: 800px;
-}
-.manual-navigation{
-	position: absolute;
-	width: 800px;
-	margin-top: -40px;
-	display: flex;
-	justify-content: center;
-}
-.manual-btn{
-	border: 2px solid var(--menu-underline-color);
-	padding: 5px;
-	border-radius: 10px;
-	cursor: pointer;
-	transition: 0.8s;
-    background-color: var(--white-color);
-}
-.manual-btn:not(:last-child) {
-	margin-right: 40px;
-}
-.manual-btn:hover{
-	background: var(--primary-color);
-}
-#radio1:checked ~ .first{
-	margin-left: 0;
-}
-#radio2:checked ~ .first{
-	margin-left: -25%;
-}
-#radio3:checked ~ .first{
-	margin-left: -50%;
-}
-#radio4:checked ~ .first{
-	margin-left: -75%;
-}
-#radio5:checked ~ .first{
-	margin-left: -100%;
-}
-#radio6:checked ~ .first{
-	margin-left: -125%;
-}
-.navigation-auto div{
-	border: 2px solid var(--menu-underline-color);
-	padding: 5px;
-	border-radius: 10px;
-	cursor: pointer;
-	transition: 1s;
-}
-.navigation-auto{
-	position: absolute;
-	width: 800px;
-	margin-top: 360px;
-	display: flex;
-	justify-content: center;
-}
-.navigation-auto div:not(:last-child){
-	margin-right: 40px;
-}
-#radio1:checked ~ .navigation-auto .auto-btn1{
-	background: var(--white-color);
-}
-#radio2:checked ~ .navigation-auto .auto-btn2{
-	background: var(--white-color);
-}
-#radio3:checked ~ .navigation-auto .auto-btn3{
-	background: var(--white-color);
-}
-#radio4:checked ~ .navigation-auto .auto-btn4{
-	background: var(--white-color);
-}
-#radio5:checked ~ .navigation-auto .auto-btn5{
-	background: var(--white-color);
-}
-#radio6:checked ~ .navigation-auto .auto-btn6{
-	background: var(--white-color);
-}
-
-
-/* Para telas pequenas, como tablets */
-@media (max-width: 768px) {
-    .slider {
-        width: 100%;
-        height: auto;
-        overflow: hidden;
-    }
-
-    .slides {
-        display: flex;
-        width: 600%;
-        height: auto;
-        transition: margin-left 0.5s ease-in-out;
-    }
-
-    .slide {
-        width: 16.6667%; /* Cada slide ocupa 1/6 do total */
-        flex-shrink: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .slide img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-
-    .manual-navigation,
-    .navigation-auto {
-        width: 100%;
-        position: relative;
-    }
-
-    .manual-btn {
-        padding: 6px;
-        margin-right: 10px;
-    }
-
-    #radio1:checked ~ .first {
-        margin-left: 0;
-    }
-    
-    #radio2:checked ~ .first {
-        margin-left: -16.7%;
-    }
-    
-    #radio3:checked ~ .first {
-        margin-left: -33.4%;
-    }
-    
-    #radio4:checked ~ .first {
-        margin-left: -50%;
-    }
-    
-    #radio5:checked ~ .first {
-        margin-left: -66.7%;
-    }
-    
-    #radio6:checked ~ .first {
-        margin-left: -83.3%;
-    }
-}
-
-/* Para celulares menores que 480px */
-@media (max-width: 480px) {
-    .slider {
-        width: 100%;
-        height: auto;
-        overflow: hidden;
-    }
-
-    .slides {
-        display: flex;
-        width: 600%; /* ou 400% dependendo do número de slides */
-        transition: margin-left 0.8s ease-in-out;
-      }
-      
-
-    .slide {
-        width: 50%; /* Ajustado para 2 slides por vez em telas menores */
-        flex-shrink: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .slide img {
-        width: 100%;
-        height: auto;
-        object-fit: contain;
-        border-radius: 0.5rem;
-      }
-
-    .slider,
-    .slide img {
-    max-width: 100%;
+/* SLIDE SHOW - Swiper versão */
+.swiper {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 2rem auto;
+    position: relative;
     overflow: hidden;
-}
-
-
-    .slider-container {
-        max-width: 800px;
-        width: 100%;
-        margin: 0 auto;
-        position: relative;
-        aspect-ratio: 16 / 9; /* Mantém proporção em qualquer tela */
-      }
-
-    .manual-navigation,
-    .navigation-auto {
-        width: 100%;
-        position: relative;
+    box-shadow: 0px 0px 15px 5px var(--white-color);
+    transition: 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  .swiper:hover {
+    box-shadow: 0px 0px 25px 10px var(--white-color);
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    max-height: 400px;
+  }
+  
+  /* Navegação */
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: var(--white-color);
+    transition: transform 0.2s ease;
+  }
+  
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Paginação */
+  .swiper-pagination-bullet {
+    background-color: var(--menu-underline-color);
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: var(--white-color);
+    opacity: 1;
+  }
+  
+  /* RESPONSIVO */
+  @media (max-width: 768px) {
+    .swiper-slide img {
+      max-height: 300px;
     }
-
-    .navigation-auto div {
-        opacity: 0.5;
-        background: transparent;
-      }
-      
-      #radio1:checked ~ .navigation-auto .auto-btn1,
-      #radio2:checked ~ .navigation-auto .auto-btn2,
-      #radio3:checked ~ .navigation-auto .auto-btn3,
-      #radio4:checked ~ .navigation-auto .auto-btn4,
-      #radio5:checked ~ .navigation-auto .auto-btn5,
-      #radio6:checked ~ .navigation-auto .auto-btn6 {
-        background: var(--menu-underline-color);
-        opacity: 1;
-      }      
-
-    .manual-btn {
-        border: 2px solid var(--menu-underline-color);
-        padding: 6px;
-        border-radius: 50%;
-        cursor: pointer;
-        background: transparent;
-        transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
-      }
-      
-      .manual-btn:hover {
-        background-color: var(--menu-underline-color);
-        transform: scale(1.1);
-      }
-      
-
-    #radio1:checked ~ .first {
-        margin-left: 0;
+  }
+  
+  @media (max-width: 480px) {
+    .swiper-slide img {
+      max-height: 250px;
     }
-
-    #radio2:checked ~ .first {
-        margin-left: -50%;
+  }
+  
+  @media (max-width: 320px) {
+    .swiper-slide img {
+      max-height: 200px;
     }
-
-    #radio3:checked ~ .first {
-        margin-left: -100%;
-    }
-
-    #radio4:checked ~ .first {
-        margin-left: -150%;
-    }
-
-    #radio5:checked ~ .first {
-        margin-left: -200%;
-    }
-
-    #radio6:checked ~ .first {
-        margin-left: -250%;
-    }
-}
-
-/* Para celulares muito pequenos, como 320px */
-@media (max-width: 320px) {
-    .slider {
-        width: 100%;
-        height: auto;
-        overflow: hidden;
-    }
-
-    .slides {
-        display: flex;
-        width: 600%;
-        height: auto;
-        transition: margin-left 0.5s ease-in-out;
-    }
-
-    .slide {
-        width: 100%; /* Apenas 1 slide por vez */
-        flex-shrink: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .slide img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-
-    .manual-navigation,
-    .navigation-auto {
-        width: 100%;
-        position: relative;
-    }
-
-    .manual-btn {
-        padding: 4px;
-        margin-right: 3px;
-    }
-
-    #radio1:checked ~ .first {
-        margin-left: 0;
-    }
-
-    #radio2:checked ~ .first {
-        margin-left: -100%;
-    }
-
-    #radio3:checked ~ .first {
-        margin-left: -200%;
-    }
-
-    #radio4:checked ~ .first {
-        margin-left: -300%;
-    }
-
-    #radio5:checked ~ .first {
-        margin-left: -400%;
-    }
-
-    #radio6:checked ~ .first {
-        margin-left: -500%;
-    }
-}
+  }  
